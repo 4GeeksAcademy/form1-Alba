@@ -60,7 +60,7 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label for="last name class="form-label">Last Name</label>
+                      <label for="last name" class=form-label">Last Name</label>
                       <input type="text" class="form-control" id="last name" aria-describedby="text">
                     </div>
                 </form>
@@ -97,15 +97,22 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <div class="mb-3 bg-secondary p-1 w-50 rounded radiob mt-5">
-                    <div>
-                        <input class="ms-4" type="radio" name="mastercard" id="mastercard" value="mastercard">
+                
+                <div class="bg-secondary justify-content-center p-1 w-50 rounded radiob mt-5">
+                    <div class="form-check form-check-inline ms-4">
+                        <input class="form-check-input" type="radio" name="inlineflexRadioDefault" id="inlineflexRadioDefault1">
                         <i class="fa-brands fa-cc-mastercard"></i>
-                        <input class="ms-3" type="radio" name="visa" id="visa" value="visa">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineflexRadioDefault" id="inlineflexRadioDefault2">
                         <i class="fa-brands fa-cc-visa"></i>
-                        <input class="ms-3" type="radio" name="discover" id="discover" value="discover">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineflexRadioDefault" id="inlineflexRadioDefault2">
                         <i class="fa-brands fa-cc-discover"></i>
-                        <input class="ms-3" type="radio" name="dinners" id="dinners" value="dinners">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineflexRadioDefault" id="inlineflexRadioDefault2">
                         <i class="fa-brands fa-cc-diners-club"></i>
                     </div>
                 </div>
@@ -113,15 +120,16 @@
             </div>
             <div class=" col-6 mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" style="height: 100px"></textarea>
+                <textarea class="form-control" id="message" style="height: 80px"></textarea>
                 <div id="emailHelp" class="form-text">Add any notes here.</div>
             </div>
         </div>
-        
-
-        <div class="card-footer text-body-secondary float-end mr-2">
-            <button type="button" class="btn btn-secondary btn-sm">cancel</button>
-            <button type="button" class="btn btn-primary btn-sm">send</button>
+       
+        <div class="card-footer align-items-center bg-light p-3">
+            <div class="footer d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary btn-sm">cancel</button>
+                <button type="button" class="btn btn-primary btn-sm ms-1">send</button>
+            </div>
         </div>
       </div>
 
